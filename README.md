@@ -4,7 +4,8 @@ _This is an example stack configuration for the private preview of Terraform Sta
 constructs and features are subject to change given feedback received during this preview. Do not
 use Stacks for production workloads at this time._
 
-IMAGE
+![github-via-vault-secrets-stack](https://github.com/hashicorp/github-via-vault-secrets-stack/assets/2430490/1b4b919c-0559-4d7b-8d05-f669c23ac828)
+
 
 An example Terraform Stack that uses a datasource to fetch a static GitHub token from HCP Vault
 Secrets (using OIDC authentication to Vault) and passes the token to another component for provisioning resources
