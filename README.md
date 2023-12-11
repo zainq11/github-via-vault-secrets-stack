@@ -19,8 +19,9 @@ _Prerequisites: You must have a Terraform Cloud account with access to the priva
 Terraform Stacks, a GitHub account, and an HCP account with HCP Vault Secrets containing a valid
 GitHub personal access token. Details of all of this are found in the provided Stacks User Guide._
 
-3. **Fork this repository** to your own GitHub account, such that you can edit this stack configuration
+1. **Configure Vault Secrets authentication** by [TODO]
+2. **Fork this repository** to your own GitHub account, such that you can edit this stack configuration
    for your purposes.
-4. **Edit your forked stack configuration** and change `deployments.tfdeploy.hcl` to use the correct values.
-5. **Create a new stack** in Terraform Cloud and connect it to your forked configuration repository.
-6. **Provision away!** Once applied, you should have a new GitHub respository created in the account you provided a token for.
+3. **Edit your forked stack configuration** and change `deployments.tfdeploy.hcl` to use the correct values.
+4. **Create a new stack** in Terraform Cloud and connect it to your forked configuration repository.
+5. **Provision away!** Once applied, you should have a new GitHub respository created in the account you provided a token for.
