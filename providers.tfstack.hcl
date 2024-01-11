@@ -4,18 +4,15 @@ required_providers {
     version = "~> 5.42.0"
   }
 
-  vault_secrets = {
-    source  = "hashicorp/hcp_vault_secrets"
-    version = "~> 0.77.0"
+  hcp = {
+    source  = "hashicorp/hcp"
+    version = "~> 0.79.0"
   }
 }
 
-provider "hcp_vault_secrets" "this" {
+provider "hcp" "this" {
   config {
-    # Incompatible with stacks OIDC auth :/
-    # We need the provider to accept a raw JWT, a path to a JWT, or the contents of the credentials
-    # file (not a path) as all the other stacks-supported providers do (AWS, Azure, GCP, Vault)
-    # credential_file = ":("
+    token_file = var.identity_token_file
   }
 }
 

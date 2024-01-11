@@ -7,7 +7,7 @@ component "secrets" {
   }
 
   providers = {
-    hcp_vault_secrets = provider.hcp_vault_secrets.this
+    hcp = provider.hcp.this
   }
 }
 
