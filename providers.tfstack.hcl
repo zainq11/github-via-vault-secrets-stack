@@ -12,12 +12,15 @@ required_providers {
 
 provider "hcp" "this" {
   config {
-    token_file = var.identity_token_file
+    workload_identity {
+      resource_name = var.workload_idp_name
+      token_file    = var.identity_token_file
+    }
   }
 }
 
 provider "github" "this" {
   config {
-    token = component.vault.github_token
+    token = component.secrets.github_token
   }
 }
