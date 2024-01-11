@@ -19,7 +19,9 @@ _Prerequisites: You must have a Terraform Cloud account with access to the priva
 Terraform Stacks, a GitHub account, and an HCP account with HCP Vault Secrets containing a valid
 GitHub personal access token. Details of all of this are found in the provided Stacks User Guide._
 
-1. **Configure Vault Secrets authentication** by [TODO]
+1. **Configure Vault Secrets authentication** by using the HCP API or Terraform itself: https://registry.terraform.io/modules/chrisarcand/workload-identity/hcp/latest
+   You must configure Terraform Cloud as a workload identity provider, create a service principal for that provider, and create an IAM binding to give the service principal permission to the Project your Vault Secrets application is in.
+   There currently is no user interface in the HCP Platform to do this.
 2. **Fork this repository** to your own GitHub account, such that you can edit this stack configuration
    for your purposes.
 3. **Edit your forked stack configuration** and change `deployments.tfdeploy.hcl` to use the correct values.
