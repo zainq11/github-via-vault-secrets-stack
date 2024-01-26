@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 identity_token "vault_secrets" {
   audience = ["<Set to your HCP IAM assume-role audience>"]
 }
