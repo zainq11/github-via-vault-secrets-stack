@@ -18,6 +18,7 @@ component "github" {
   source = "./github"
 
   inputs = {
+    repository_name = var.repository_name
   }
 
   providers = {

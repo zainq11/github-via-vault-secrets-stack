@@ -11,7 +11,7 @@ terraform {
 }
 
 resource "github_repository" "example" {
-  name        = "example-repo-created-via-tf-stacks"
+  name        = var.repository_name
   description = "A neato repo created via Terraform Stacks!"
 
   visibility = "private"
