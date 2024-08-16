@@ -22,6 +22,6 @@ deployment "local" {
     # iam/project/f46ade69-e6a9-42f3-b0ba-df65de0792f9/service-principal/stacks-hashicorp-zzz-zst/workload-identity-provider/stacks-hashicorp-zzz-zst"
     workload_idp_name         = "iam/project/f46ade69-e6a9-42f3-b0ba-df65de0792f9/service-principal/stacks-hashicorp-zzz-zst/workload-identity-provider/stacks-hashicorp-zzz-zst"
     identity_token_file       = identity_token.vault_secrets.jwt_filename
-    repository_name           = "local_stacks_repo-4" 
+    repository_name           = "local_stacks_repo-5" 
   }
 }
